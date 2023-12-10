@@ -69,7 +69,7 @@ public class Main {
 
         if(count + firstStation - secondStation < secondStation - firstStation){
             System.out.println("Минимальное колличество промежуточных станций: ");
-            minStation = count - secondStation;
+            minStation = (count + firstStation - 1) - secondStation;
             System.out.println(minStation);
         }else{
             System.out.println("Минимальное колличество промежуточных станций: ");
